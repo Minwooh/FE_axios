@@ -84,7 +84,7 @@ const HomeInput = () => {
     try {
       // HTTP POST 요청으로 새로운 게시물 생성
       axios
-        .post('http://127.0.0.1:8000/posts', {
+        .post('http://127.0.0.1:8000/posts/', {
           title: inputs.title,
           content: inputs.content,
         })
